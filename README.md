@@ -1,0 +1,2 @@
+# MAPPOSA
+Places rating app
