@@ -1,0 +1,5 @@
+main color = #050504;
+silver = #C0C0C0;
+
+#FF753A
+orange :FF753A;

@@ -1,0 +1,161 @@
+@import "./breakpoints.scss";
+@import "./Global.scss";
+
+.Mapboxclassgl{
+    margin: 0%;
+    
+    @include mobile{
+      height:100% ;
+      width: 100%;
+    }
+}
+.Card{
+  width: 225px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include media("<=tablet"){
+    
+  }
+  
+}
+
+label{
+  color:#050504;
+  font-size: 1em;
+  border-bottom: 0.02px solid #FF753A;
+  margin:0.125rem 0;
+  width: max-content;
+
+}
+
+h4,h5 {
+  color:#050504;
+  font-weight: 300;
+}
+
+.Reviewdesc{
+  color:#050504;
+  font-size: .5em;
+}
+
+.Rating{
+  display: flex;
+  flex-direction: row;
+}
+
+.Formadd{
+  width: 225px;
+  height: 225px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+select{
+  border: none;
+  color:#FF753A;
+}
+
+.blurbk{
+  background: rgba( 13, 12, 12, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: fixed;
+  right:0px;
+  top: 0px;
+  
+  height: 100%;
+  width: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mobile{
+    height: 100%;
+  width: 2.5em;
+   
+  }
+
+}
+
+.zoomes{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  
+  @include mobile{
+    
+    padding-bottom: 50px;
+  }
+ .zoomed{
+    background: none;
+    margin: 0%;
+    color: rgb(22,22,22);
+    border: none;
+    border-radius: 3.125em;
+    height: 2.5em;
+    width: 2.5em;
+    image-rendering: high-quality;
+  .plusminus{
+    height: 1.875em;
+    width: 1.875em;
+    image-rendering: high-quality;
+  }
+    
+  }
+  
+  
+}
+
+.lbtn{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .usericon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    padding-top: 12px;
+    
+  }
+
+  button{
+    background: none;
+    
+    border:none;
+
+    
+    h4{
+      padding:12px 4px;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: -.25em;
+      background: rgba(5, 5, 4, 0);
+      border-radius: .75em;
+    }
+    &:hover{
+      
+      h4{
+        color: white;
+        background: rgb(22,22,22);
+        cursor: pointer;
+        
+        transition: all ease-in-out .45s;
+      }
+    }
+  }
+  
+ 
+}
+
+
+
+

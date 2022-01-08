@@ -1,0 +1,32 @@
+uname -Antojenith
+pwd -Kavingeorge @5058
+
+
+
+103.124.153.201 - ip
+127.0.0.1:27017
+
+mongodb+srv://Antojenith:Kavingeorge@cluster0.ocwry.mongodb.net/test
+
+
+app.get("/getUsers", (req, res) => {
+  UserModel.find({}, (err, result) => {
+    if (err) {
+      res.json(err);
+    } else {
+      res.json(result);
+    }
+  });
+});
+mongodb+srv://Antojenith:Kavingeorge@cluster0.ocwry.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+  *
+  {
+"username":"anto",
+"title": "taj mahal",
+"desc": "alagu-ba ",
+"rating":4,
+"lat":1345 , 
+"long": 1432
+}
+
+  *

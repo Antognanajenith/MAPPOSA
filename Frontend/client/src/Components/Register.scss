@@ -1,0 +1,88 @@
+@import "../breakpoints.scss";
+
+@keyframes animzf {
+    0%   {
+        opacity: 0;
+        height: 250px;
+        width: 175px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 500px;
+        width: 350px;
+    }
+  }
+
+.Loginmodal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    transition: all ease-in-out 1.45s;
+}
+
+.glassformbg{
+    background: rgba( 232,232,232, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.3px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 18px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    border-bottom: 0px rgba(40,40,40,0.35) solid;
+    border-right: 0px rgba(40,40,40,0.35) solid;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: animzf;
+    animation-duration: .45s;
+    
+    animation-timing-function: ease-in-out;
+
+    .formcol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .iconmap{
+            height: 50px;
+            position: absolute;
+            width: 52px;
+            top: 40px;
+            left: 150px;
+        }
+
+        .xsymbol{
+            height: 10px;
+            position: absolute;
+            width: 10px;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .mapposa{
+            position: absolute;
+            top: 90px;
+        }
+        .glassformalign{
+            height: 250px;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+    }
+    
+    
+}
+
